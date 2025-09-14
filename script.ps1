@@ -1435,7 +1435,7 @@ $BRIGHT_GREEN    ╔════════════════════
 $BRIGHT_GREEN    ║$NC                                                                              $BRIGHT_GREEN║$NC
 $BRIGHT_GREEN    ║$NC    $BRIGHT_CYAN██████╗██╗   ██╗██████╗ ███████╗ ██████╗ ██████╗$NC     $BRIGHT_YELLOW██████╗ ██████╗  ██████╗$NC $BRIGHT_GREEN║$NC
 $BRIGHT_GREEN    ║$NC   $BRIGHT_CYAN██╔════╝██║   ██║██╔══██╗██╔════╝██╔═══██╗██╔══██╗$NC   $BRIGHT_YELLOW██╔═══██╗██╔══██╗██╔═══██╗$NC$BRIGHT_GREEN║$NC
-$BRIGHT_GREEN    ║$NC   $BRIGHT_CYAN██║     ██║   ██║██████╔╝███████╗██║   ██║██████╔╝$NC   $BRIGHT_YELLOW██║██║   ██║██████╔╝██║   ██║$NC$BRIGHT_GREEN║$NC
+$BRIGHT_GREEN    ║$NC   $BRIGHT_CYAN██║     ██║   ██║██████╔╝███████╗██║   ██║██████╔╝$NC   $BRIGHT_YELLOW██║   ██║██████╔╝██║   ██║$NC$BRIGHT_GREEN║$NC
 $BRIGHT_GREEN    ║$NC   $BRIGHT_CYAN██║     ██║   ██║██╔══██╗╚════██║██║   ██║██╔══██╗$NC   $BRIGHT_YELLOW██║   ██║██╔══██╗██║   ██║$NC$BRIGHT_GREEN║$NC
 $BRIGHT_GREEN    ║$NC   $BRIGHT_CYAN╚██████╗╚██████╔╝██║  ██║███████║╚██████╔╝██║  ██║$NC   $BRIGHT_YELLOW╚██████╔╝██║  ██║╚██████╔╝$NC$BRIGHT_GREEN║$NC
 $BRIGHT_GREEN    ║$NC    $BRIGHT_CYAN╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝$NC    $BRIGHT_YELLOW╚═════╝ ╚═╝  ╚═╝ ╚═════╝$NC $BRIGHT_GREEN║$NC
@@ -1715,22 +1715,21 @@ Write-Host "$BRIGHT_YELLOW│$BRIGHT_WHITE  and are ready to proceed with the se
 Write-Host "$BRIGHT_YELLOW└─────────────────────────────────────────────────────────────────────────────┘$NC"
 Write-Host ""
 Write-Host "$BRIGHT_CYAN┌─────────────────────────────────────────────────────────────────────────────┐$NC"
-Write-Host "$BRIGHT_CYAN│$BRIGHT_WHITE  🚀 Type 'PROCEED' to continue execution                              $BRIGHT_CYAN│$NC"
-Write-Host "$BRIGHT_CYAN│$BRIGHT_WHITE  ❌ Type 'CANCEL' or 'EXIT' to stop safely                           $BRIGHT_CYAN│$NC"
-Write-Host "$BRIGHT_CYAN│$BRIGHT_WHITE  🔄 Type 'RESTART' to go back to mode selection                     $BRIGHT_CYAN│$NC"
+Write-Host "$BRIGHT_CYAN│$BRIGHT_WHITE  🚀 Type '1' or 'PROCEED' to continue execution                      $BRIGHT_CYAN│$NC"
+Write-Host "$BRIGHT_CYAN│$BRIGHT_WHITE  ❌ Type '2' or 'CANCEL' or 'EXIT' to stop safely                   $BRIGHT_CYAN│$NC"
+Write-Host "$BRIGHT_CYAN│$BRIGHT_WHITE  🔄 Type '3' or 'RESTART' to go back to mode selection             $BRIGHT_CYAN│$NC"
 Write-Host "$BRIGHT_CYAN└─────────────────────────────────────────────────────────────────────────────┘$NC"
 Write-Host ""
 Write-Host "$BRIGHT_GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
 Write-Host "$BRIGHT_GREEN║$BRIGHT_WHITE  💡 CONFIRMATION OPTIONS:                                          $BRIGHT_GREEN║$NC"
-Write-Host "$BRIGHT_GREEN║$BRIGHT_WHITE  • PROCEED  = Start execution immediately                           $BRIGHT_GREEN║$NC"
-Write-Host "$BRIGHT_GREEN║$BRIGHT_WHITE  • CANCEL   = Exit script safely                                    $BRIGHT_GREEN║$NC"
-Write-Host "$BRIGHT_GREEN║$BRIGHT_WHITE  • EXIT     = Exit script safely                                    $BRIGHT_GREEN║$NC"
-Write-Host "$BRIGHT_GREEN║$BRIGHT_WHITE  • RESTART  = Go back to mode selection                            $BRIGHT_GREEN║$NC"
+Write-Host "$BRIGHT_GREEN║$BRIGHT_WHITE  • 1 or PROCEED  = Start execution immediately                     $BRIGHT_GREEN║$NC"
+Write-Host "$BRIGHT_GREEN║$BRIGHT_WHITE  • 2 or CANCEL   = Exit script safely                              $BRIGHT_GREEN║$NC"
+Write-Host "$BRIGHT_GREEN║$BRIGHT_WHITE  • 3 or RESTART  = Go back to mode selection                      $BRIGHT_GREEN║$NC"
 Write-Host "$BRIGHT_GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
 Write-Host ""
-$confirmation = Read-Host "$BRIGHT_CYAN[CONFIRMATION]$BRIGHT_WHITE Enter your choice"
+$confirmation = Read-Host "$BRIGHT_CYAN[CONFIRMATION]$BRIGHT_WHITE Enter your choice (1/2/3 or PROCEED/CANCEL/RESTART)"
 
-if ($confirmation -eq "PROCEED") {
+if ($confirmation -eq "1" -or $confirmation -eq "PROCEED") {
     Write-Host ""
     Write-Host "$BRIGHT_GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
     Write-Host "$BRIGHT_GREEN║$BLINK  ✅ CONFIRMATION RECEIVED: Starting execution in 3 seconds...                   $NC$BRIGHT_GREEN║$NC"
@@ -1738,10 +1737,10 @@ if ($confirmation -eq "PROCEED") {
     Write-Host ""
     Write-Host "$BRIGHT_YELLOW  ⏳ Preparing to execute selected operation...$NC"
     Start-Sleep -Seconds 3
-} elseif ($confirmation -eq "CANCEL" -or $confirmation -eq "EXIT") {
+} elseif ($confirmation -eq "2" -or $confirmation -eq "CANCEL" -or $confirmation -eq "EXIT") {
     Write-Host ""
     Write-Host "$BRIGHT_YELLOW╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-    Write-Host "$BRIGHT_YELLOW║$BRIGHT_WHITE  👋 OPERATION CANCELLED: Exiting script safely...                               $BRIGHT_YELLOW║$NC"
+    Write-Host "$BRIGHT_YELLOW║$BLINK  👋 OPERATION CANCELLED: Exiting script safely...                               $NC$BRIGHT_YELLOW║$NC"
     Write-Host "$BRIGHT_YELLOW╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
     Write-Host ""
     Write-Host "$BRIGHT_BLUE  Thank you for using Cursor Pro+ Trial Reset Tool!$NC"
@@ -1749,10 +1748,10 @@ if ($confirmation -eq "PROCEED") {
     Write-Host ""
     Read-Host "$BRIGHT_CYAN Press Enter to exit$NC"
     exit 0
-} elseif ($confirmation -eq "RESTART") {
+} elseif ($confirmation -eq "3" -or $confirmation -eq "RESTART") {
     Write-Host ""
     Write-Host "$BRIGHT_PURPLE╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-    Write-Host "$BRIGHT_PURPLE║$BRIGHT_WHITE  🔄 RESTARTING: Returning to mode selection...                        $BRIGHT_PURPLE║$NC"
+    Write-Host "$BRIGHT_PURPLE║$BLINK  🔄 RESTARTING: Returning to mode selection...                        $NC$BRIGHT_PURPLE║$NC"
     Write-Host "$BRIGHT_PURPLE╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
     Write-Host ""
     # Restart the script by calling the main execution again
@@ -1761,7 +1760,7 @@ if ($confirmation -eq "PROCEED") {
 } else {
     Write-Host ""
     Write-Host "$BRIGHT_RED╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-    Write-Host "$BRIGHT_RED║$BRIGHT_WHITE  ❌ INVALID INPUT: Please enter PROCEED, CANCEL, EXIT, or RESTART        $BRIGHT_RED║$NC"
+    Write-Host "$BRIGHT_RED║$BLINK  ❌ INVALID INPUT: Please enter 1/2/3 or PROCEED/CANCEL/RESTART$NC        $BRIGHT_RED║$NC"
     Write-Host "$BRIGHT_RED╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
     Write-Host ""
     Write-Host "$BRIGHT_YELLOW  Please try again with a valid option.$NC"
