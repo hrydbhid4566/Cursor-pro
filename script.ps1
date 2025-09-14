@@ -509,7 +509,7 @@ console.log('Cursor device identifiers successfully hijacked - ES module version
             } elseif ($content -match "function t\$\(\)" -or $content -match "async function y5") {
                 Write-Host "$BLUE🔍 [Found]$NC Device ID related function found."
                 if ($content -match "function t\$\(\)") {
-                    $content = $content -replace "function t\$\(\)\{", "function t`$(){return \"00:00:00:00:00:00\";"
+                    $content = $content -replace "function t\$\(\)\{", "function t`$(){return '00:00:00:00:00:00';"
                     Write-Host "$GREEN✅ [Success]$NC Modified MAC address function."
                 }
                 if ($content -match "async function y5") {
@@ -827,7 +827,7 @@ function Invoke-CursorInitialization {
                 Remove-Item -Path $file -Force -ErrorAction Stop
                 Write-Host "$GREEN✅ [Success]$NC Deleted file: $file"
             } catch {
-                Write-Host "$RED❌ [Error]$NC Failed to delete file $file: $($_.Exception.Message)"
+                Write-Host "$RED❌ [Error]$NC Failed to delete file ${file}: $($_.Exception.Message)"
             }
         } else {
             Write-Host "$YELLOW⚠️  [Skip]$NC File does not exist, skipping: $file"
@@ -840,7 +840,7 @@ function Invoke-CursorInitialization {
             Get-ChildItem -Path $folderToCleanContents -Recurse | Remove-Item -Force -Recurse -ErrorAction Stop
             Write-Host "$GREEN✅ [Success]$NC Cleaned folder contents: $folderToCleanContents"
         } catch {
-            Write-Host "$RED❌ [Error]$NC Failed to clean folder $folderToCleanContents: $($_.Exception.Message)"
+            Write-Host "$RED❌ [Error]$NC Failed to clean folder ${folderToCleanContents}: $($_.Exception.Message)"
         }
     } else {
         Write-Host "$YELLOW⚠️  [Skip]$NC Folder does not exist, skipping: $folderToCleanContents"
@@ -852,7 +852,7 @@ function Invoke-CursorInitialization {
             Remove-Item -Path $folderToDeleteCompletely -Recurse -Force -ErrorAction Stop
             Write-Host "$GREEN✅ [Success]$NC Deleted folder: $folderToDeleteCompletely"
         } catch {
-            Write-Host "$RED❌ [Error]$NC Failed to delete folder $folderToDeleteCompletely: $($_.Exception.Message)"
+            Write-Host "$RED❌ [Error]$NC Failed to delete folder ${folderToDeleteCompletely}: $($_.Exception.Message)"
         }
     } else {
         Write-Host "$YELLOW⚠️  [Skip]$NC Folder does not exist, skipping: $folderToDeleteCompletely"
