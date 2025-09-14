@@ -2,7 +2,7 @@
 $OutputEncoding = [System.Text.Encoding]::UTF8
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
-# Advanced Color definitions
+# 🎨 Professional Dark Theme Color Definitions
 $RED = "`e[31m"
 $GREEN = "`e[32m"
 $YELLOW = "`e[33m"
@@ -14,6 +14,33 @@ $WHITE = "`e[37m"
 $BOLD = "`e[1m"
 $DIM = "`e[2m"
 $NC = "`e[0m"
+
+# 🌟 Bright Professional Colors (Matrix Style)
+$BRIGHT_GREEN = "`e[92m"  # Bright Green
+$BRIGHT_RED = "`e[91m"    # Bright Red
+$BRIGHT_YELLOW = "`e[93m" # Bright Yellow
+$BRIGHT_BLUE = "`e[94m"   # Bright Blue
+$BRIGHT_PURPLE = "`e[95m" # Bright Purple
+$BRIGHT_CYAN = "`e[96m"   # Bright Cyan
+$BRIGHT_WHITE = "`e[97m"  # Bright White
+$GRAY = "`e[90m"          # Gray
+$BLACK = "`e[30m"         # Black
+$BG_GREEN = "`e[42m"      # Green Background
+$BG_RED = "`e[41m"        # Red Background
+$BG_YELLOW = "`e[43m"     # Yellow Background
+$BG_BLUE = "`e[44m"       # Blue Background
+$BLINK = "`e[5m"          # Blinking text
+$UNDERLINE = "`e[4m"      # Underlined text
+$REVERSE = "`e[7m"        # Reverse video
+
+# 🎯 Set Console Colors for Professional Dark Theme
+try {
+    $Host.UI.RawUI.BackgroundColor = "Black"
+    $Host.UI.RawUI.ForegroundColor = "Green"
+    Clear-Host
+} catch {
+    # Fallback if console color setting fails
+}
 
 # Config file and backup directory
 $STORAGE_FILE = "$env:APPDATA\Cursor\User\globalStorage\storage.json"
@@ -1404,188 +1431,188 @@ if (-not (Test-Administrator)) {
 Clear-Host
 Write-Host @"
 
-    ╔══════════════════════════════════════════════════════════════════════════════╗
-    ║                                                                              ║
-    ║    ██████╗██╗   ██╗██████╗ ███████╗ ██████╗ ██████╗     ██████╗ ██████╗  ██████╗ ║
-    ║   ██╔════╝██║   ██║██╔══██╗██╔════╝██╔═══██╗██╔══██╗   ██╔═══██╗██╔══██╗██╔═══██╗║
-    ║   ██║     ██║   ██║██████╔╝███████╗██║   ██║██████╔╝   ██║██║   ██║██████╔╝██║   ██║║
-    ║   ██║     ██║   ██║██╔══██╗╚════██║██║   ██║██╔══██╗   ██║   ██║██╔══██╗██║   ██║║
-    ║   ╚██████╗╚██████╔╝██║  ██║███████║╚██████╔╝██║  ██║   ╚██████╔╝██║  ██║╚██████╔╝║
-    ║    ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝    ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ║
-    ║                                                                              ║
-    ║                    ╔══════════════════════════════════════╗                  ║
-    ║                    ║        🚀 PROFESSIONAL EDITION      ║                  ║
-    ║                    ║     Cursor Pro Trial Reset Tool     ║                  ║
-    ║                    ║         Enhanced & Optimized        ║                         ║
-    ║                    ╚══════════════════════════════════════╝                        ║
-    ║                                                                                    ║
-    ╚══════════════════════════════════════════════════════════════════════════════╝
+$BRIGHT_GREEN    ╔══════════════════════════════════════════════════════════════════════════════╗$NC
+$BRIGHT_GREEN    ║$NC                                                                              $BRIGHT_GREEN║$NC
+$BRIGHT_GREEN    ║$NC    $BRIGHT_CYAN██████╗██╗   ██╗██████╗ ███████╗ ██████╗ ██████╗$NC     $BRIGHT_YELLOW██████╗ ██████╗  ██████╗$NC $BRIGHT_GREEN║$NC
+$BRIGHT_GREEN    ║$NC   $BRIGHT_CYAN██╔════╝██║   ██║██╔══██╗██╔════╝██╔═══██╗██╔══██╗$NC   $BRIGHT_YELLOW██╔═══██╗██╔══██╗██╔═══██╗$NC$BRIGHT_GREEN║$NC
+$BRIGHT_GREEN    ║$NC   $BRIGHT_CYAN██║     ██║   ██║██████╔╝███████╗██║   ██║██████╔╝$NC   $BRIGHT_YELLOW██║██║   ██║██████╔╝██║   ██║$NC$BRIGHT_GREEN║$NC
+$BRIGHT_GREEN    ║$NC   $BRIGHT_CYAN██║     ██║   ██║██╔══██╗╚════██║██║   ██║██╔══██╗$NC   $BRIGHT_YELLOW██║   ██║██╔══██╗██║   ██║$NC$BRIGHT_GREEN║$NC
+$BRIGHT_GREEN    ║$NC   $BRIGHT_CYAN╚██████╗╚██████╔╝██║  ██║███████║╚██████╔╝██║  ██║$NC   $BRIGHT_YELLOW╚██████╔╝██║  ██║╚██████╔╝$NC$BRIGHT_GREEN║$NC
+$BRIGHT_GREEN    ║$NC    $BRIGHT_CYAN╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝$NC    $BRIGHT_YELLOW╚═════╝ ╚═╝  ╚═╝ ╚═════╝$NC $BRIGHT_GREEN║$NC
+$BRIGHT_GREEN    ║$NC                                                                              $BRIGHT_GREEN║$NC
+$BRIGHT_GREEN    ║$NC                    $BRIGHT_PURPLE╔══════════════════════════════════════╗$NC                  $BRIGHT_GREEN║$NC
+$BRIGHT_GREEN    ║$NC                    $BRIGHT_PURPLE║$NC        $BLINK🚀 PROFESSIONAL EDITION$NC      $BRIGHT_PURPLE║$NC                  $BRIGHT_GREEN║$NC
+$BRIGHT_GREEN    ║$NC                    $BRIGHT_PURPLE║$NC     $BRIGHT_WHITECursor Pro Trial Reset Tool$NC     $BRIGHT_PURPLE║$NC                  $BRIGHT_GREEN║$NC
+$BRIGHT_GREEN    ║$NC                    $BRIGHT_PURPLE║$NC         $BRIGHT_CYANEnhanced & Optimized$NC        $BRIGHT_PURPLE║$NC                  $BRIGHT_GREEN║$NC
+$BRIGHT_GREEN    ║$NC                    $BRIGHT_PURPLE╚══════════════════════════════════════╝$NC                  $BRIGHT_GREEN║$NC
+$BRIGHT_GREEN    ║$NC                                                                              $BRIGHT_GREEN║$NC
+$BRIGHT_GREEN    ╚══════════════════════════════════════════════════════════════════════════════╝$NC
 
 "@
 Write-Host ""
-Write-Host "$BLUE═══════════════════════════════════════════════════════════════════════════════════$NC"
-Write-Host "$GREEN🎯 ADVANCED MACHINE CODE MODIFICATION & TRIAL RESET UTILITY$NC"
-Write-Host "$BLUE═══════════════════════════════════════════════════════════════════════════════════$NC"
+Write-Host "$BRIGHT_BLUE═══════════════════════════════════════════════════════════════════════════════════$NC"
+Write-Host "$BRIGHT_GREEN🎯 ADVANCED MACHINE CODE MODIFICATION & TRIAL RESET UTILITY$NC"
+Write-Host "$BRIGHT_BLUE═══════════════════════════════════════════════════════════════════════════════════$NC"
 
 # 🎯 Advanced Professional Mode Selection Menu
 Write-Host ""
-Write-Host "$GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-Write-Host "$GREEN║                         🎯 ADVANCED OPERATION MODE SELECTION                     ║$NC"
-Write-Host "$GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+Write-Host "$BRIGHT_GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+Write-Host "$BRIGHT_GREEN║$BLINK                         🎯 ADVANCED OPERATION MODE SELECTION                     $NC$BRIGHT_GREEN║$NC"
+Write-Host "$BRIGHT_GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
 Write-Host ""
-Write-Host "$BLUE╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-Write-Host "$BLUE║  1️⃣  QUICK MODIFICATION MODE (RECOMMENDED FOR BEGINNERS)                        ║$NC"
-Write-Host "$BLUE╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
-Write-Host "$YELLOW      ✓ Only modify machine code (preserves all existing data)$NC"
-Write-Host "$YELLOW      ✓ Inject JavaScript code into core files$NC"
-Write-Host "$YELLOW      ✓ Keep existing Cursor configuration and settings$NC"
-Write-Host "$YELLOW      ✓ Fast execution with minimal risk$NC"
-Write-Host "$YELLOW      ✓ Suitable for first-time users$NC"
+Write-Host "$BRIGHT_BLUE╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+Write-Host "$BRIGHT_BLUE║$BRIGHT_WHITE  1️⃣  QUICK MODIFICATION MODE (RECOMMENDED FOR BEGINNERS)$NC                        $BRIGHT_BLUE║$NC"
+Write-Host "$BRIGHT_BLUE╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Only modify machine code (preserves all existing data)$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Inject JavaScript code into core files$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Keep existing Cursor configuration and settings$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Fast execution with minimal risk$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Suitable for first-time users$NC"
 Write-Host ""
-Write-Host "$RED╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-Write-Host "$RED║  2️⃣  COMPLETE RESET MODE (ADVANCED USERS ONLY)                                 ║$NC"
-Write-Host "$RED╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
-Write-Host "$YELLOW      ✓ Completely reset Cursor environment$NC"
-Write-Host "$YELLOW      ✓ Delete all Cursor folders and configurations$NC"
-Write-Host "$YELLOW      ✓ Modify machine code and inject JavaScript$NC"
-Write-Host "$YELLOW      ✓ Maximum effectiveness for trial reset$NC"
-Write-Host "$RED      ⚠️  WARNING: All Cursor data will be permanently lost$NC"
-Write-Host "$RED      ⚠️  Please backup important data before proceeding$NC"
+Write-Host "$BRIGHT_RED╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+Write-Host "$BRIGHT_RED║$BRIGHT_WHITE  2️⃣  COMPLETE RESET MODE (ADVANCED USERS ONLY)$NC                                 $BRIGHT_RED║$NC"
+Write-Host "$BRIGHT_RED╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Completely reset Cursor environment$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Delete all Cursor folders and configurations$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Modify machine code and inject JavaScript$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Maximum effectiveness for trial reset$NC"
+Write-Host "$BRIGHT_RED      ⚠️  WARNING: All Cursor data will be permanently lost$NC"
+Write-Host "$BRIGHT_RED      ⚠️  Please backup important data before proceeding$NC"
 Write-Host ""
-Write-Host "$GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-Write-Host "$GREEN║  3️⃣  ADVANCED DIAGNOSTIC MODE (SYSTEM ANALYSIS & TROUBLESHOOTING)              ║$NC"
-Write-Host "$GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
-Write-Host "$YELLOW      ✓ Comprehensive system analysis$NC"
-Write-Host "$YELLOW      ✓ Cursor installation verification$NC"
-Write-Host "$YELLOW      ✓ Registry integrity check$NC"
-Write-Host "$YELLOW      ✓ File permission analysis$NC"
-Write-Host "$YELLOW      ✓ Generate detailed diagnostic report$NC"
+Write-Host "$BRIGHT_GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+Write-Host "$BRIGHT_GREEN║$BRIGHT_WHITE  3️⃣  ADVANCED DIAGNOSTIC MODE (SYSTEM ANALYSIS & TROUBLESHOOTING)$NC              $BRIGHT_GREEN║$NC"
+Write-Host "$BRIGHT_GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Comprehensive system analysis$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Cursor installation verification$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Registry integrity check$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ File permission analysis$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Generate detailed diagnostic report$NC"
 Write-Host ""
-Write-Host "$PURPLE╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-Write-Host "$PURPLE║  4️⃣  BATCH PROCESSING MODE (MULTIPLE SYSTEM SUPPORT)                          ║$NC"
-Write-Host "$PURPLE╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
-Write-Host "$YELLOW      ✓ Process multiple user accounts$NC"
-Write-Host "$YELLOW      ✓ Network-wide deployment support$NC"
-Write-Host "$YELLOW      ✓ Automated scheduling capabilities$NC"
-Write-Host "$YELLOW      ✓ Enterprise-level management$NC"
+Write-Host "$BRIGHT_PURPLE╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+Write-Host "$BRIGHT_PURPLE║$BRIGHT_WHITE  4️⃣  BATCH PROCESSING MODE (MULTIPLE SYSTEM SUPPORT)$NC                          $BRIGHT_PURPLE║$NC"
+Write-Host "$BRIGHT_PURPLE╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Process multiple user accounts$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Network-wide deployment support$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Automated scheduling capabilities$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Enterprise-level management$NC"
 Write-Host ""
-Write-Host "$CYAN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-Write-Host "$CYAN║  5️⃣  STEALTH MODE (SILENT OPERATION)                                           ║$NC"
-Write-Host "$CYAN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
-Write-Host "$YELLOW      ✓ Silent execution with minimal output$NC"
-Write-Host "$YELLOW      ✓ Background processing$NC"
-Write-Host "$YELLOW      ✓ Log file generation$NC"
-Write-Host "$YELLOW      ✓ Suitable for automated scripts$NC"
+Write-Host "$BRIGHT_CYAN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+Write-Host "$BRIGHT_CYAN║$BRIGHT_WHITE  5️⃣  STEALTH MODE (SILENT OPERATION)$NC                                           $BRIGHT_CYAN║$NC"
+Write-Host "$BRIGHT_CYAN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Silent execution with minimal output$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Background processing$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Log file generation$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Suitable for automated scripts$NC"
 Write-Host ""
-Write-Host "$MAGENTA╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-Write-Host "$MAGENTA║  6️⃣  CUSTOM CONFIGURATION MODE (ADVANCED USERS)                               ║$NC"
-Write-Host "$MAGENTA╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
-Write-Host "$YELLOW      ✓ Custom machine ID generation$NC"
-Write-Host "$YELLOW      ✓ Advanced JavaScript injection options$NC"
-Write-Host "$YELLOW      ✓ Custom backup locations$NC"
-Write-Host "$YELLOW      ✓ Fine-tuned control over all operations$NC"
+Write-Host "$BRIGHT_PURPLE╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+Write-Host "$BRIGHT_PURPLE║$BRIGHT_WHITE  6️⃣  CUSTOM CONFIGURATION MODE (ADVANCED USERS)$NC                               $BRIGHT_PURPLE║$NC"
+Write-Host "$BRIGHT_PURPLE╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Custom machine ID generation$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Advanced JavaScript injection options$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Custom backup locations$NC"
+Write-Host "$BRIGHT_YELLOW      ✓ Fine-tuned control over all operations$NC"
 Write-Host ""
 
 # Professional User Input Section
-Write-Host "$GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-Write-Host "$GREEN║                              📝 MAKE YOUR SELECTION                              ║$NC"
-Write-Host "$GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+Write-Host "$BRIGHT_GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+Write-Host "$BRIGHT_GREEN║$BLINK                              📝 MAKE YOUR SELECTION                              $NC$BRIGHT_GREEN║$NC"
+Write-Host "$BRIGHT_GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
 Write-Host ""
 
 $executeMode = $null
 do {
-    Write-Host "$BLUE┌─────────────────────────────────────────────────────────────────────────────┐$NC"
-    Write-Host "$BLUE│  Please enter your choice: [1-6] for different operation modes              │$NC"
-    Write-Host "$BLUE│  [1] Quick Mode  [2] Complete Reset  [3] Diagnostic  [4] Batch  [5] Stealth [6] Custom │$NC"
-    Write-Host "$BLUE└─────────────────────────────────────────────────────────────────────────────┘$NC"
-    $userChoice = Read-Host "Your Selection"
+    Write-Host "$BRIGHT_BLUE┌─────────────────────────────────────────────────────────────────────────────┐$NC"
+    Write-Host "$BRIGHT_BLUE│$BRIGHT_WHITE  Please enter your choice: [1-6] for different operation modes$NC              $BRIGHT_BLUE│$NC"
+    Write-Host "$BRIGHT_BLUE│$BRIGHT_WHITE  [1] Quick Mode  [2] Complete Reset  [3] Diagnostic  [4] Batch  [5] Stealth [6] Custom$NC $BRIGHT_BLUE│$NC"
+    Write-Host "$BRIGHT_BLUE└─────────────────────────────────────────────────────────────────────────────┘$NC"
+    $userChoice = Read-Host "$BRIGHT_CYAN[SELECTION]$BRIGHT_WHITE Enter your choice (1-6)"
     
     if ($userChoice -eq "1") {
         Write-Host ""
-        Write-Host "$GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-        Write-Host "$GREEN║  ✅ SELECTION CONFIRMED: QUICK MODIFICATION MODE                                ║$NC"
-        Write-Host "$GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
-        Write-Host "$YELLOW      • Machine code modification only$NC"
-        Write-Host "$YELLOW      • JavaScript injection enabled$NC"
-        Write-Host "$YELLOW      • All existing data preserved$NC"
+        Write-Host "$BRIGHT_GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+        Write-Host "$BRIGHT_GREEN║$BLINK  ✅ SELECTION CONFIRMED: QUICK MODIFICATION MODE$NC                                $BRIGHT_GREEN║$NC"
+        Write-Host "$BRIGHT_GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+        Write-Host "$BRIGHT_YELLOW      • Machine code modification only$NC"
+        Write-Host "$BRIGHT_YELLOW      • JavaScript injection enabled$NC"
+        Write-Host "$BRIGHT_YELLOW      • All existing data preserved$NC"
         $executeMode = "MODIFY_ONLY"
         break
     } elseif ($userChoice -eq "2") {
         Write-Host ""
-        Write-Host "$RED╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-        Write-Host "$RED║  ⚠️  ADVANCED MODE SELECTED: COMPLETE RESET MODE                                ║$NC"
-        Write-Host "$RED╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
-        Write-Host "$RED      ⚠️  WARNING: This will permanently delete ALL Cursor data!$NC"
-        Write-Host "$RED      ⚠️  WARNING: All configurations, settings, and data will be lost!$NC"
+        Write-Host "$BRIGHT_RED╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+        Write-Host "$BRIGHT_RED║$BLINK  ⚠️  ADVANCED MODE SELECTED: COMPLETE RESET MODE$NC                                $BRIGHT_RED║$NC"
+        Write-Host "$BRIGHT_RED╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+        Write-Host "$BRIGHT_RED      ⚠️  WARNING: This will permanently delete ALL Cursor data!$NC"
+        Write-Host "$BRIGHT_RED      ⚠️  WARNING: All configurations, settings, and data will be lost!$NC"
         Write-Host ""
-        Write-Host "$YELLOW┌─────────────────────────────────────────────────────────────────────────────┐$NC"
-        Write-Host "$YELLOW│  Type 'CONFIRM' to proceed with complete reset, or any other key to cancel  │$NC"
-        Write-Host "$YELLOW└─────────────────────────────────────────────────────────────────────────────┘$NC"
-        $confirmReset = Read-Host "Confirmation Required"
+        Write-Host "$BRIGHT_YELLOW┌─────────────────────────────────────────────────────────────────────────────┐$NC"
+        Write-Host "$BRIGHT_YELLOW│$BRIGHT_WHITE  Type 'CONFIRM' to proceed with complete reset, or any other key to cancel$NC  $BRIGHT_YELLOW│$NC"
+        Write-Host "$BRIGHT_YELLOW└─────────────────────────────────────────────────────────────────────────────┘$NC"
+        $confirmReset = Read-Host "$BRIGHT_CYAN[CONFIRMATION]$BRIGHT_WHITE Type 'CONFIRM' to proceed"
         if ($confirmReset -eq "CONFIRM") {
             Write-Host ""
-            Write-Host "$GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-            Write-Host "$GREEN║  ✅ CONFIRMED: COMPLETE RESET MODE ACTIVATED                                  ║$NC"
-            Write-Host "$GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+            Write-Host "$BRIGHT_GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+            Write-Host "$BRIGHT_GREEN║$BLINK  ✅ CONFIRMED: COMPLETE RESET MODE ACTIVATED$NC                                  $BRIGHT_GREEN║$NC"
+            Write-Host "$BRIGHT_GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
             $executeMode = "RESET_AND_MODIFY"
             break
         } else {
             Write-Host ""
-            Write-Host "$YELLOW╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-            Write-Host "$YELLOW║  👋 OPERATION CANCELLED: Returning to mode selection...                        ║$NC"
-            Write-Host "$YELLOW╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+            Write-Host "$BRIGHT_YELLOW╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+            Write-Host "$BRIGHT_YELLOW║$BLINK  👋 OPERATION CANCELLED: Returning to mode selection...$NC                        $BRIGHT_YELLOW║$NC"
+            Write-Host "$BRIGHT_YELLOW╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
             Write-Host ""
             continue
         }
     } elseif ($userChoice -eq "3") {
         Write-Host ""
-        Write-Host "$GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-        Write-Host "$GREEN║  ✅ SELECTION CONFIRMED: ADVANCED DIAGNOSTIC MODE                               ║$NC"
-        Write-Host "$GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
-        Write-Host "$YELLOW      • Comprehensive system analysis$NC"
-        Write-Host "$YELLOW      • Cursor installation verification$NC"
-        Write-Host "$YELLOW      • Registry integrity check$NC"
-        Write-Host "$YELLOW      • Generate detailed diagnostic report$NC"
+        Write-Host "$BRIGHT_GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+        Write-Host "$BRIGHT_GREEN║$BLINK  ✅ SELECTION CONFIRMED: ADVANCED DIAGNOSTIC MODE$NC                               $BRIGHT_GREEN║$NC"
+        Write-Host "$BRIGHT_GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+        Write-Host "$BRIGHT_YELLOW      • Comprehensive system analysis$NC"
+        Write-Host "$BRIGHT_YELLOW      • Cursor installation verification$NC"
+        Write-Host "$BRIGHT_YELLOW      • Registry integrity check$NC"
+        Write-Host "$BRIGHT_YELLOW      • Generate detailed diagnostic report$NC"
         $executeMode = "DIAGNOSTIC"
         break
     } elseif ($userChoice -eq "4") {
         Write-Host ""
-        Write-Host "$PURPLE╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-        Write-Host "$PURPLE║  ✅ SELECTION CONFIRMED: BATCH PROCESSING MODE                                 ║$NC"
-        Write-Host "$PURPLE╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
-        Write-Host "$YELLOW      • Process multiple user accounts$NC"
-        Write-Host "$YELLOW      • Network-wide deployment support$NC"
-        Write-Host "$YELLOW      • Automated scheduling capabilities$NC"
-        Write-Host "$YELLOW      • Enterprise-level management$NC"
+        Write-Host "$BRIGHT_PURPLE╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+        Write-Host "$BRIGHT_PURPLE║$BLINK  ✅ SELECTION CONFIRMED: BATCH PROCESSING MODE$NC                                 $BRIGHT_PURPLE║$NC"
+        Write-Host "$BRIGHT_PURPLE╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+        Write-Host "$BRIGHT_YELLOW      • Process multiple user accounts$NC"
+        Write-Host "$BRIGHT_YELLOW      • Network-wide deployment support$NC"
+        Write-Host "$BRIGHT_YELLOW      • Automated scheduling capabilities$NC"
+        Write-Host "$BRIGHT_YELLOW      • Enterprise-level management$NC"
         $executeMode = "BATCH"
         break
     } elseif ($userChoice -eq "5") {
         Write-Host ""
-        Write-Host "$CYAN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-        Write-Host "$CYAN║  ✅ SELECTION CONFIRMED: STEALTH MODE                                           ║$NC"
-        Write-Host "$CYAN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
-        Write-Host "$YELLOW      • Silent execution with minimal output$NC"
-        Write-Host "$YELLOW      • Background processing$NC"
-        Write-Host "$YELLOW      • Log file generation$NC"
-        Write-Host "$YELLOW      • Suitable for automated scripts$NC"
+        Write-Host "$BRIGHT_CYAN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+        Write-Host "$BRIGHT_CYAN║$BLINK  ✅ SELECTION CONFIRMED: STEALTH MODE$NC                                           $BRIGHT_CYAN║$NC"
+        Write-Host "$BRIGHT_CYAN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+        Write-Host "$BRIGHT_YELLOW      • Silent execution with minimal output$NC"
+        Write-Host "$BRIGHT_YELLOW      • Background processing$NC"
+        Write-Host "$BRIGHT_YELLOW      • Log file generation$NC"
+        Write-Host "$BRIGHT_YELLOW      • Suitable for automated scripts$NC"
         $executeMode = "STEALTH"
         break
     } elseif ($userChoice -eq "6") {
         Write-Host ""
-        Write-Host "$MAGENTA╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-        Write-Host "$MAGENTA║  ✅ SELECTION CONFIRMED: CUSTOM CONFIGURATION MODE                             ║$NC"
-        Write-Host "$MAGENTA╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
-        Write-Host "$YELLOW      • Custom machine ID generation$NC"
-        Write-Host "$YELLOW      • Advanced JavaScript injection options$NC"
-        Write-Host "$YELLOW      • Custom backup locations$NC"
-        Write-Host "$YELLOW      • Fine-tuned control over all operations$NC"
+        Write-Host "$BRIGHT_PURPLE╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+        Write-Host "$BRIGHT_PURPLE║$BLINK  ✅ SELECTION CONFIRMED: CUSTOM CONFIGURATION MODE$NC                             $BRIGHT_PURPLE║$NC"
+        Write-Host "$BRIGHT_PURPLE╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+        Write-Host "$BRIGHT_YELLOW      • Custom machine ID generation$NC"
+        Write-Host "$BRIGHT_YELLOW      • Advanced JavaScript injection options$NC"
+        Write-Host "$BRIGHT_YELLOW      • Custom backup locations$NC"
+        Write-Host "$BRIGHT_YELLOW      • Fine-tuned control over all operations$NC"
         $executeMode = "CUSTOM"
         break
     } else {
         Write-Host ""
-        Write-Host "$RED╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-        Write-Host "$RED║  ❌ INVALID SELECTION: Please enter 1, 2, 3, 4, 5, or 6 only                    ║$NC"
-        Write-Host "$RED╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+        Write-Host "$BRIGHT_RED╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+        Write-Host "$BRIGHT_RED║$BLINK  ❌ INVALID SELECTION: Please enter 1, 2, 3, 4, 5, or 6 only$NC                    $BRIGHT_RED║$NC"
+        Write-Host "$BRIGHT_RED╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
         Write-Host ""
     }
 } while ($true)
@@ -1676,39 +1703,72 @@ if ($executeMode -eq "MODIFY_ONLY") {
 }
 Write-Host ""
 
-# 🤔 Professional Final Confirmation
-Write-Host "$GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-Write-Host "$GREEN║                              🤔 FINAL CONFIRMATION                               ║$NC"
-Write-Host "$GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+# 🤔 Professional Final Confirmation with Clear Instructions
 Write-Host ""
-Write-Host "$YELLOW┌─────────────────────────────────────────────────────────────────────────────┐$NC"
-Write-Host "$YELLOW│  Please confirm that you have read and understood all the above steps    │$NC"
-Write-Host "$YELLOW│  and are ready to proceed with the selected operation.                     │$NC"
-Write-Host "$YELLOW└─────────────────────────────────────────────────────────────────────────────┘$NC"
+Write-Host "$BRIGHT_GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+Write-Host "$BRIGHT_GREEN║$BLINK                              🤔 FINAL CONFIRMATION                               $NC$BRIGHT_GREEN║$NC"
+Write-Host "$BRIGHT_GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
 Write-Host ""
-Write-Host "$BLUE┌─────────────────────────────────────────────────────────────────────────────┐$NC"
-Write-Host "$BLUE│  Type 'PROCEED' to continue, or any other key to exit safely              │$NC"
-Write-Host "$BLUE└─────────────────────────────────────────────────────────────────────────────┘$NC"
-$confirmation = Read-Host "Your Confirmation"
+Write-Host "$BRIGHT_YELLOW┌─────────────────────────────────────────────────────────────────────────────┐$NC"
+Write-Host "$BRIGHT_YELLOW│$BRIGHT_WHITE  Please confirm that you have read and understood all the above steps    $BRIGHT_YELLOW│$NC"
+Write-Host "$BRIGHT_YELLOW│$BRIGHT_WHITE  and are ready to proceed with the selected operation.                     $BRIGHT_YELLOW│$NC"
+Write-Host "$BRIGHT_YELLOW└─────────────────────────────────────────────────────────────────────────────┘$NC"
+Write-Host ""
+Write-Host "$BRIGHT_CYAN┌─────────────────────────────────────────────────────────────────────────────┐$NC"
+Write-Host "$BRIGHT_CYAN│$BRIGHT_WHITE  🚀 Type 'PROCEED' to continue execution                              $BRIGHT_CYAN│$NC"
+Write-Host "$BRIGHT_CYAN│$BRIGHT_WHITE  ❌ Type 'CANCEL' or 'EXIT' to stop safely                           $BRIGHT_CYAN│$NC"
+Write-Host "$BRIGHT_CYAN│$BRIGHT_WHITE  🔄 Type 'RESTART' to go back to mode selection                     $BRIGHT_CYAN│$NC"
+Write-Host "$BRIGHT_CYAN└─────────────────────────────────────────────────────────────────────────────┘$NC"
+Write-Host ""
+Write-Host "$BRIGHT_GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+Write-Host "$BRIGHT_GREEN║$BRIGHT_WHITE  💡 CONFIRMATION OPTIONS:                                          $BRIGHT_GREEN║$NC"
+Write-Host "$BRIGHT_GREEN║$BRIGHT_WHITE  • PROCEED  = Start execution immediately                           $BRIGHT_GREEN║$NC"
+Write-Host "$BRIGHT_GREEN║$BRIGHT_WHITE  • CANCEL   = Exit script safely                                    $BRIGHT_GREEN║$NC"
+Write-Host "$BRIGHT_GREEN║$BRIGHT_WHITE  • EXIT     = Exit script safely                                    $BRIGHT_GREEN║$NC"
+Write-Host "$BRIGHT_GREEN║$BRIGHT_WHITE  • RESTART  = Go back to mode selection                            $BRIGHT_GREEN║$NC"
+Write-Host "$BRIGHT_GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+Write-Host ""
+$confirmation = Read-Host "$BRIGHT_CYAN[CONFIRMATION]$BRIGHT_WHITE Enter your choice"
 
 if ($confirmation -eq "PROCEED") {
     Write-Host ""
-    Write-Host "$GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-    Write-Host "$GREEN║  ✅ CONFIRMATION RECEIVED: Starting execution in 3 seconds...                   ║$NC"
-    Write-Host "$GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+    Write-Host "$BRIGHT_GREEN╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+    Write-Host "$BRIGHT_GREEN║$BLINK  ✅ CONFIRMATION RECEIVED: Starting execution in 3 seconds...                   $NC$BRIGHT_GREEN║$NC"
+    Write-Host "$BRIGHT_GREEN╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
     Write-Host ""
-    Write-Host "$YELLOW  ⏳ Preparing to execute selected operation...$NC"
+    Write-Host "$BRIGHT_YELLOW  ⏳ Preparing to execute selected operation...$NC"
     Start-Sleep -Seconds 3
+} elseif ($confirmation -eq "CANCEL" -or $confirmation -eq "EXIT") {
+    Write-Host ""
+    Write-Host "$BRIGHT_YELLOW╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+    Write-Host "$BRIGHT_YELLOW║$BRIGHT_WHITE  👋 OPERATION CANCELLED: Exiting script safely...                               $BRIGHT_YELLOW║$NC"
+    Write-Host "$BRIGHT_YELLOW╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+    Write-Host ""
+    Write-Host "$BRIGHT_BLUE  Thank you for using Cursor Pro+ Trial Reset Tool!$NC"
+    Write-Host "$BRIGHT_BLUE  You can run this script again anytime when you're ready.$NC"
+    Write-Host ""
+    Read-Host "$BRIGHT_CYAN Press Enter to exit$NC"
+    exit 0
+} elseif ($confirmation -eq "RESTART") {
+    Write-Host ""
+    Write-Host "$BRIGHT_PURPLE╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+    Write-Host "$BRIGHT_PURPLE║$BRIGHT_WHITE  🔄 RESTARTING: Returning to mode selection...                        $BRIGHT_PURPLE║$NC"
+    Write-Host "$BRIGHT_PURPLE╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+    Write-Host ""
+    # Restart the script by calling the main execution again
+    & $MyInvocation.MyCommand.Path
+    exit 0
 } else {
     Write-Host ""
-    Write-Host "$YELLOW╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
-    Write-Host "$YELLOW║  👋 OPERATION CANCELLED: Exiting script safely...                               ║$NC"
-    Write-Host "$YELLOW╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
+    Write-Host "$BRIGHT_RED╔══════════════════════════════════════════════════════════════════════════════════╗$NC"
+    Write-Host "$BRIGHT_RED║$BRIGHT_WHITE  ❌ INVALID INPUT: Please enter PROCEED, CANCEL, EXIT, or RESTART        $BRIGHT_RED║$NC"
+    Write-Host "$BRIGHT_RED╚══════════════════════════════════════════════════════════════════════════════════╝$NC"
     Write-Host ""
-    Write-Host "$BLUE  Thank you for using Cursor Pro+ Trial Reset Tool!$NC"
-    Write-Host "$BLUE  You can run this script again anytime when you're ready.$NC"
+    Write-Host "$BRIGHT_YELLOW  Please try again with a valid option.$NC"
     Write-Host ""
-    Read-Host "Press Enter to exit"
+    Read-Host "$BRIGHT_CYAN Press Enter to continue$NC"
+    # Restart the confirmation process
+    & $MyInvocation.MyCommand.Path
     exit 0
 }
 Write-Host ""
